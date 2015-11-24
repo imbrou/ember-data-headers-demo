@@ -16,7 +16,10 @@ module.exports = function(environment) {
     APP: {
       // Here you can pass flags/options to your application instance
       // when it is created
+		//API_HOST: 'http://ec2-52-28-181-198.eu-central-1.compute.amazonaws.com'
+		API_HOST: 'http://localhost:8000'
     }
+
   };
 
   if (environment === 'development') {

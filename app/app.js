@@ -15,4 +15,24 @@ App = Ember.Application.extend({
 
 loadInitializers(App, config.modulePrefix);
 
+// Attempt 3:
+/*
+Ember.$.ajaxSetup({
+	headers: { 'Authorization': 'Bearer ZBLA' }
+});
+//console.log("Added headers.") ;
+*/
+
+// Attempt 4:
+/*
+Ember.$.ajaxSetup({
+	beforeSend: function(xhr) {
+		xhr.withCredentials = true;
+		xhr.setRequestHeader(
+			'Authorization', 'Bearer ZBLA'
+		);
+	}
+});
+*/
+
 export default App;
