@@ -1,9 +1,9 @@
-<h1>MODEL:</h1>
-<hr/>
-<pre>
-	{{#each model as |issue index|}}
-		({{index}}) {{issue.title}}
+<h1>Guys</h1>
+<ul>
+	{{#each model as |guy|}}
+		<li>
+			Number {{guy.id}} is {{guy.name}}
+		</li>
 	{{/each}}
-</pre>
-<hr/>
+</ul>
 

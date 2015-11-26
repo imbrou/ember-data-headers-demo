@@ -16,8 +16,7 @@ module.exports = function(environment) {
     APP: {
       // Here you can pass flags/options to your application instance
       // when it is created
-		//API_HOST: 'http://ec2-52-28-181-198.eu-central-1.compute.amazonaws.com'
-		API_HOST: 'http://localhost:8000'
+		API_HOST: 'http://broubrou.olympe.in/util/stack/headers-demo'
     }
 
   };
@@ -28,6 +27,9 @@ module.exports = function(environment) {
     // ENV.APP.LOG_TRANSITIONS = true;
     // ENV.APP.LOG_TRANSITIONS_INTERNAL = true;
     // ENV.APP.LOG_VIEW_LOOKUPS = true;
+	 //
+	 // ENV.RAISE_ON_DEPRECATION = true ;
+	 // ENV.LOG_STACKTRACE_ON_DEPRECATION = true ;
   }
 
   if (environment === 'test') {

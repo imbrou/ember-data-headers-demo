@@ -13,6 +13,22 @@ App = Ember.Application.extend({
   Resolver: Resolver
 });
 
+// Enable promise errors logging
+Ember.RSVP.on('error',  function(error) {
+  Ember.Logger.assert(false,  error);
+});
+
+// Log classic errors
+Ember.onerror = function(error) {
+	Ember.$.ajax('/error-notification',  {
+		type: 'POST', 
+		data: {
+			stack: error.stack, 
+			otherInformation: 'exception message'
+		}
+	});
+};
+
 loadInitializers(App, config.modulePrefix);
 
 // Attempt 3:
