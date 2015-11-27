@@ -13,41 +13,42 @@ App = Ember.Application.extend({
   Resolver: Resolver
 });
 
-// Enable promise errors logging
-Ember.RSVP.on('error',  function(error) {
-  Ember.Logger.assert(false,  error);
-});
-
-// Log classic errors
-Ember.onerror = function(error) {
-	Ember.$.ajax('/error-notification',  {
-		type: 'POST', 
-		data: {
-			stack: error.stack, 
-			otherInformation: 'exception message'
-		}
-	});
-};
-
 loadInitializers(App, config.modulePrefix);
 
-// Attempt 3:
+/*
+ * http://discuss.emberjs.com/t/passing-header-information-to-rest-get-request-using-restadapter/4220
+ */
+
+// Attempt 5:
 /*
 Ember.$.ajaxSetup({
 	headers: { 'Authorization': 'Bearer ZBLA' }
 });
-//console.log("Added headers.") ;
+console.log("Added headers.") ;
 */
 
-// Attempt 4:
+// Attempt 6:
 /*
 Ember.$.ajaxSetup({
 	beforeSend: function(xhr) {
-		xhr.withCredentials = true;
+		//xhr.withCredentials = true;
 		xhr.setRequestHeader(
 			'Authorization', 'Bearer ZBLA'
 		);
+		console.log("Added headers.") ;
 	}
+});
+*/
+
+/*
+ * http://stackoverflow.com/questions/31171268/emberjs-ember-data-customize-http-header
+ */
+
+// Attempt 7:
+/*
+Ember.$.ajaxPrefilter(function(options, oriOpt, jqXHR) {
+   jqXHR.setRequestHeader("Authorization", "Bearer ZBLA") ;
+	console.log("Added headers.") ;
 });
 */
 
