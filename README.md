@@ -9,6 +9,7 @@ My current fail-count is: 7 (I'll keep this up-to-date).
 You can find my epic attempts in:  
 - `app/adapters/application.js`
 - `app/app.js`  
+
 In comments are the links to each relevant topic. (said Yoda).
 
 A demo API endpoint is deployed at [http://broubrou.olympe.in/util/stack/headers-demo/api](http://broubrou.olympe.in/util/stack/headers-demo/api) .
