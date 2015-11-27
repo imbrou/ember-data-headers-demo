@@ -3,7 +3,7 @@
 This minimal app reproduces an issue I've been stuck on for 3 days now:  
 [http://stackoverflow.com/q/33684353/5097905](http://stackoverflow.com/q/33684353/5097905)  
   
-The idea was simply to add custom headers to my ember-data requests.
+The idea was simply to add custom headers to my ember-data requests.  
 My current fail-count is: 7 (I'll keep this up-to-date).  
 You can find my epic attempts in:  
 - `app/adapters/application.js`
