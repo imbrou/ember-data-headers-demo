@@ -12,7 +12,7 @@ You can find my epic attempts in:
 
 In comments are the links to each relevant topic. (said Yoda).
 
-A demo API endpoint is deployed at [http://broubrou.olympe.in/util/stack/headers-demo/api](http://broubrou.olympe.in/util/stack/headers-demo/api) .
+A demo API endpoint is deployed at [http://broubrou.olympe.in/util/stack/headers-demo/api](http://broubrou.olympe.in/util/stack/headers-demo/api) .  
 If you are interested in its (5 lines of) PHP, or want to run it locally, you can find it in the `api` folder.
 
 ## Prerequisites
