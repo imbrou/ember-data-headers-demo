@@ -2,6 +2,7 @@
 
 This minimal app reproduces an issue I've been stuck on for 3 days now:  
 http://stackoverflow.com/q/33684353/5097905  
+  
 The idea is simply to add custom headers to my ember-data requests.
 For this, I tried several approaches.  
 You will find my 4 attempts in:  
