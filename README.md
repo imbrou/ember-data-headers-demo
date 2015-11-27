@@ -10,7 +10,7 @@ You can find my epic attempts in:
 - `app/adapters/application.js`
 - `app/app.js`  
 
-In comments are the links to each relevant topic. (said Yoda).
+> In comments are the links to each relevant topic (said Yoda).
 
 A demo API endpoint is deployed at [http://broubrou.olympe.in/util/stack/headers-demo/api](http://broubrou.olympe.in/util/stack/headers-demo/api) .  
 If you are interested in its (5 lines of) PHP, or want to run it locally, you can find it in the `api` folder.
@@ -32,5 +32,4 @@ If you are interested in its (5 lines of) PHP, or want to run it locally, you ca
 ## Running / Development
 
 * `ember server`
-* Visit your buggy app at [http://localhost:4200](http://localhost:4200). :-)
-
+* Visit your buggy app at [http://localhost:4200](http://localhost:4200).
