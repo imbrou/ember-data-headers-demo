@@ -11,7 +11,7 @@ export default DS.RESTAdapter.extend({
 	 */
 
 	// Attempt 1:
-	//headers: { "Authorization": "Bearer ZBLA" },
+	headers: { "Authorization": "Bearer ZBLA" },
 
 	// Attempt 2:
 	/*
